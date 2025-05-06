@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import Calendar from './Components/Calendar/Calendar'
+import TennisScores from "./Components/TennisScores/TennisScores"
 
 function App() {
   
 
   return (
-   
-      <div>
-        Yo!
+      <div className='App'>
+        <Calendar/>
+        <TennisScores />
       </div>
-      
-    
   )
 }
 
