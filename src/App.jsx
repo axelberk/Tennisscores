@@ -9,7 +9,10 @@ function App() {
   return (
       <div className='App'>
         <Calendar/>
+        <div className='content-container'>
+        
         <TennisScores />
+        </div>
       </div>
   )
 }
