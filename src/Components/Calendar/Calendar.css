@@ -1,10 +1,10 @@
 .Calendar {
-    background-color: rgb(218, 213, 213);
+    background-color: green;
     flex-direction: row;
     display: flex;
     align-items: center;
     gap: 10px;
-    color: black;
+    color: white;
     justify-content: center;
 }
 
@@ -15,6 +15,7 @@
 .calendar-arrow {
     background: none;
     border: none;
+    color: white;
 }
 
 .calendar-arrow:hover {
@@ -34,7 +35,7 @@
   }
   
   .calendar-date:hover {
-    background-color: #e0e0e0;
+   
   }
 
 
