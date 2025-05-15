@@ -13,11 +13,11 @@ const TennisScores = ({ selectedDate, setSelectedMatch }) => {
       setLoading(true);
       setError(null);
 
-      const formattedDate = selectedDate.toISOString().split("T")[0];
+      const formattedDate = (selectedDate ?? new Date()).toISOString().split("T")[0];
 
       try {
         const response = await axios.get(
-          "https://tennis.sportdevs.com/matches-by-date?date=eq.{date}",
+          `https://tennis.sportdevs.com/matches-by-date?date=eq.${formattedDate}`,
           {
             headers: {
               Authorization: `Bearer ${import.meta.env.VITE_API_TENNIS_KEY}`,
